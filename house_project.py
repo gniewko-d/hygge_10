@@ -7,7 +7,13 @@ Created on Tue Jan  4 22:31:09 2022
 to_buy_eq = {}
 bought_eq = {}
 bill = []
-budget =  int(input("how much money you want to spend on this eq?:"))
+while
+try:
+    budget =  int(input("how much money you want to spend on this eq?:"))
+except ValueError:
+    print(f"{budget} is too abstract, use numeric value")
+    budget =  int(input("how much money you want to spend on this eq?:"))
+
 bill_sum = None
 choice = 666
 class home_eq():
@@ -16,7 +22,8 @@ class home_eq():
     def __init__(self, name, price, quantity = 1):
         
         self.name = name
-        self.price = price
+        self.price = pricedog
+        
         self.quantity = quantity
         global bill
     
